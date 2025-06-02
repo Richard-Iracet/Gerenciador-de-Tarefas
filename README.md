@@ -1,8 +1,36 @@
-# React + Vite
+# 📝 Gerenciador de Tarefas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um gerenciador de tarefas construído com **React**, com foco em simplicidade, responsividade e design escuro.
 
-Currently, two official plugins are available:
+🔗 [Acesse o projeto online](https://gerenciador-de-tarefas-lime.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## 🚀 Tecnologias utilizadas
+
+- **React** – Construção da interface
+- **React Router DOM** – Navegação entre páginas
+- **Tailwind CSS** – Estilização moderna e responsiva
+- **Lucide Icons** – Ícones minimalistas
+- **UUID** – Geração de IDs únicos
+- **LocalStorage** – Persistência dos dados no navegador
+
+---
+
+## ✨ Funcionalidades
+
+- Adicionar novas tarefas com título e descrição
+- Marcar tarefas como concluídas (com visual Notion-style)
+- Visualizar detalhes da tarefa em uma página separada
+- Excluir tarefas com um clique
+- Salvamento automático no navegador
+- Interface escura e agradável
+
+---
+
+## 💻 Como rodar o projeto localmente
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repo.git
+   cd seu-repo
