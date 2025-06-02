@@ -1,6 +1,6 @@
 # 📝 Gerenciador de Tarefas
 
-Um gerenciador de tarefas construído com **React**, com foco em simplicidade, responsividade e design escuro.
+Um gerenciador de tarefas construído com **React**, com foco em simplicidade e responsividade.
 
 🔗 [Acesse o projeto online](https://gerenciador-de-tarefas-lime.vercel.app/)
 
@@ -20,11 +20,10 @@ Um gerenciador de tarefas construído com **React**, com foco em simplicidade, r
 ## ✨ Funcionalidades
 
 - Adicionar novas tarefas com título e descrição
-- Marcar tarefas como concluídas (com visual Notion-style)
+- Marcar tarefas como concluídas
 - Visualizar detalhes da tarefa em uma página separada
 - Excluir tarefas com um clique
 - Salvamento automático no navegador
-- Interface escura e agradável
 
 ---
 
