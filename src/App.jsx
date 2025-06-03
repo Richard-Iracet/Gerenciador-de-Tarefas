@@ -23,25 +23,25 @@ function App() {
   }, [tasks]);
 
   useEffect(() => {
-    const fetchTasks = async () => {
-      const response = await fetch(
-        "https://jsonplaceholder.typicode.com/todos?_limit=3",
-        {
-          method: "GET",
-        }
-      );
+    const storedTasks = localStorage.getItem("tasks");
+    if (!storedTasks) {
+      const fetchTasks = async () => {
+        const response = await fetch(
+          "https://jsonplaceholder.typicode.com/todos?_limit=3"
+        );
+        const data = await response.json();
 
-      const data = await response.json();
+        const tasksWithDescription = data.map((task) => ({
+          ...task,
+          description: `Descrição da tarefa "${task.title}"`,
+          isCompleted: task.completed || false,
+        }));
 
-      const tasksWithDescription = data.map((task) => ({
-        ...task,
-        description: `Descrição da tarefa "${task.title}"`,
-        isCompleted: task.completed || false,
-      }));
+        setTasks(tasksWithDescription);
+      };
 
-      setTasks(tasksWithDescription);
-    };
-    fetchTasks();
+      fetchTasks();
+    }
   }, []);
 
   function onTaskClick(taskId) {
