@@ -31,5 +31,5 @@ Um gerenciador de tarefas construído com **React**, com foco em simplicidade e 
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repo.git
-   cd seu-repo
+   git clone https://github.com/Richard-Iracet/Gerenciador-de-Tarefas.git
+   cd Gerenciador-de-Tarefas
